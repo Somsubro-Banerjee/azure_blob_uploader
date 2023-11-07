@@ -1,6 +1,6 @@
 [package]
 name = "azure_blob_uploader"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license-file = "LICENSE"
 description = "A simple crate to help you upload files to Azure Blob Storage"
