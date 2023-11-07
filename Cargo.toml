@@ -6,7 +6,7 @@ license-file = "LICENSE"
 description = "A simple crate to help you upload files to Azure Blob Storage"
 homepage = "https://github.com/Somsubro-Banerjee/azure_blob_uploader"
 repository = "https://github.com/Somsubro-Banerjee/azure_blob_uploader"
-readme = "A simple crate to help you upload files to Azure Blob Storage"
+readme = "README.md"
 keywords = ["azure", "azure-blob-storage", "blob-storage"]
 
 [[example]]
