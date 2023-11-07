@@ -1,0 +1,17 @@
+[package]
+name = "azure_blob_uploader"
+version = "0.1.0"
+edition = "2021"
+
+
+[[example]]
+name = "azure_upload"
+crate-type = ["staticlib"]
+path = "examples/azure_uploader/src/main.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+azure_storage = "0.17.0"
+azure_storage_blobs = "0.17.0"
+tokio = { version = "1.33.0", features = ["full"] }
