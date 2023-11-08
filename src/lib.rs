@@ -16,7 +16,7 @@
 ///    )
 ///    .await;
 ///     match uploader {
-///        Ok(value) => println!(""blob url: {:#?}", value),    // use pattern mathcing to get the output.
+///        Ok(value) => println!("blob url: {:#?}", value),    // use pattern mathcing to get the output.
 ///        Err(_) => println!("Some Error Occured!"),
 ///    }
 /// }
