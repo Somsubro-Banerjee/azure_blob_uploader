@@ -18,8 +18,8 @@ mod secrets;
     )
    .await;
      match uploader {
-        Ok(value) => println!("Done!"),    // use pattern mathcing to get the output.
-        Err(_) => println!("Some Error Occured!"),
+        Ok(value) => println!("blob url: {:#?}", value), // Use pattern matching to get the output.
+        Err(_) => println!("Some Error Occurred!"),
     }
  }
 ```
