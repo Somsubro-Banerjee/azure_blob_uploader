@@ -1,9 +1,8 @@
-///  Creates a new `AzureBlobUploader` instance
+/// Creates a new `AzureBlobUploader` instance
 /// # Example
 /// ```
 /// use azure_blob_uploader::azure_blob_uploader::AzureBlobUploader; // Import the Crate
 /// mod secrets;
-
 /// #[tokio::main]
 /// async fn main() {
 ///    let file_path = "/path/to/your/file";     // Define path to your file
@@ -22,6 +21,7 @@
 ///    }
 /// }
 /// ```
+/// 
 /// Initialize the `AzureBlobUploader` and call the `upload_file_to_blob_storage()` function
 ///
 /// `file_path` will have the location of the file you want to upload.<br>
@@ -34,5 +34,4 @@
 /// By default the chunk size is set in Mb, so here `10` represents 10Mb chunks. <br>
 ///
 /// After the file transfer is completed it returns the link of the storage blob that you can leverage to use it further.
-///
 pub mod azure_blob_uploader;
