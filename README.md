@@ -18,8 +18,23 @@ mod secrets;
     )
    .await;
      match uploader {
-        Ok(value) => println!("Done!"),    // use pattern mathcing to get the output.
-        Err(_) => println!("Some Error Occured!"),
+        Ok(value) => println!("blob url: {:#?}", value), // Use pattern matching to get the output.
+        Err(_) => println!("Some Error Occurred!"),
     }
  }
 ```
+
+
+
+Initialize the `AzureBlobUploader` and call the `upload_file_to_blob_storage()` function
+
+`file_path` will have the location of the file you want to upload.<br>
+`STORAGE_ACCOUNT` is bascially the name of the storage account.<br>
+`STORAGE_KEY` is the Key to access the storage account.<br>
+`STORAGE_CONTAINER` is the name of the storage container present in the storage account.<br>
+`STORAGE_BLOB` is the name of the blob object. <br>
+
+Lastly we are passing the chunk size which is of type `usize`.
+By default the chunk size is set in Mb, so here `10` represents 10Mb chunks. <br>
+
+After the file transfer is completed it returns the link of the storage blob that you can leverage to use it further.
